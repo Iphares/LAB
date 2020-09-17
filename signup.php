@@ -8,8 +8,8 @@ require "includes/header.php"
             <div class="my-auto">
                 <div class="signup-form">
                     <form action="includes/signup-helper.php" method="post">
-                        <h2>Register</h2>
-                        <p class="hint-text">Create your account!</p>
+                        <h2 style="color: darkorange; text-align: center">Register </h2>
+                        <p class="color: darkorange; text-align: center">Create your account!</p>
                         <div class="form-group">
                             <div class="row">
                                 <div class="col">
