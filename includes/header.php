@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,11 +34,26 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+      <?php
+        if (!isset($_SESSION['uid']))  {
+          echo '<li class="nav-item">
+          <a class="nav-link" href="login.php">login</a>
+          </li>';
+        }
+        else  {
+          echo '<li class="nav-item">
+          <a class="nav-link" href="includes/logout.php">logout</a>
+          </li>';
+        }
+      ?>
+
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="../about.php">Home <span class="sr-only">(current)</span></a>
       </li>
+
+      
       <li class="nav-item">
-        <a class="nav-link" href="login.html">Login</a>
+        <a class="nav-link" href="login.php">Login</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
