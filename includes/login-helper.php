@@ -17,7 +17,6 @@ if(isset($_POST['login-submit']))   {
         header("Location: ../login.php?error=SQLInjection");
         exit();
     }
-
     
     else    {
 
