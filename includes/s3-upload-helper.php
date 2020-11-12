@@ -20,8 +20,8 @@ use Aws\Exception\AwsException;
         $s3Client = S3Client::factory(
             array('region'=> 'us-east-1',
             'credentials'=> array(
-                'key'=> "AKIAZJ6HHLQQNFFJXLUE",
-                'secret'=> "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"
+                'key'=> "",
+                'secret'=> ""
             )
             )
         );
