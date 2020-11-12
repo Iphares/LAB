@@ -1,0 +1,55 @@
+devine
+cs230Lab1030
+
+micaustin
+cs230Lab1030
+
+https://639831071776.signin.aws.amazon.com/console
+
+AKIAZJ6HHLQQNFFJXLUE
+
+RW60Ryk0fJCA6ErapCYhFDuzXkNITW1g0W4Fr3uR
+
+https://639831071776.signin.aws.amazon.com/console
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+arn:aws:iam::639831071776:user/s3User
+AKIAZJ6HHLQQNFFJXLUE
+
+
+{
+    "Version": "2012-10-17",
+    "Id": "cs230-Upload-Policy,
+    "Statement": [
+        {
+            "Sid": "230-S3-Upload",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::639831071776:user/s3-app"
+            },
+            "Action": [
+                "s3:PutObject",
+                "s3:GetObject",
+                "s3:GetBucketlocation",
+                "s3:Get*",
+                "s3:Put*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::230-s3",
+                "arn:aws:s3:::230-s3/*"
+            ]
+        }
+    ]
+}
