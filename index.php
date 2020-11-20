@@ -3,6 +3,7 @@ require 'includes/header.php'
 ?>
 
 <main>
+
 <link rel="stylesheet" href="css/About.css">
 	<div class="about-section">
 		<h1>About Us Page</h1>
